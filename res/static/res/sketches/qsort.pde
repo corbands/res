@@ -93,16 +93,16 @@ SortElement[] init_sort_elems()
 
 void draw_sort_element(SortElement e)
 {
-	fill(#00dd00);
-    stroke(#000000);
+	fill(#ffffff);
+    stroke(#dd0000);
     ellipse(e.x, e.y, e.r, e.r);
 
 
 	fill(0, 0, 0);
 	if (e.value > 9)
-   		text(str(e.value), e.x-7, e.y+2);
+   		text(str(e.value), e.x-7, e.y+4);
    	else
-   		text(str(e.value), e.x-3, e.y+2);
+   		text(str(e.value), e.x-3, e.y+4);
 }
 //----------------------------------------------//
 // classes

@@ -1,0 +1,35 @@
+<html>
+
+<head>
+	{% include 'res/head.html' %}
+	{% load staticfiles %}
+	<title>Резюме</title>	
+</head>
+
+<body>
+<nav class="navbar" role="navigation">
+    <div class="container" style="background-color:#fff; border-radius:5px;">
+
+        <ul class="nav navbar-nav navbar-right" style="margin-right:16%">
+            <li><a href="{% url 'home' %}">Резюме</a></li>
+        </ul>
+
+    </div>
+</nav>
+
+<div class="container">
+	<div class="col-md-offset-2 col-md-8">
+		<p>Перейти на сайт: <a href="http://emh.gingercode.me">emh.gingercode.me</a></p>
+		<p>Исходники: <a href="http://github.com/corbands/emh.git">github.com/corbands/emh.git</a></p>
+
+		<hr>
+
+		<p>Веб-сервис, который выполняет функции англо-русского словарика.
+		   Здесь можно составить свой список слов с переводом.</p>
+		<p>Проект находится в развитии. Код в некоторых местах не очень продуман. Есть todo, есть идеи по развитию функционала (авторизация через соц сети, api для mobile apps, ...)</p>
+
+	</div>
+</div>
+
+</body>
+</html>
